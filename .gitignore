@@ -45,3 +45,17 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+*.vcxproj
+ConnectFour.vcxproj.filters
+*.log
+Debug/ConnectFour.pch
+*.user
+Debug/ConnectFour.tlog/ConnectFour.lastbuildstate
+*.tlog
+*.obj
+Debug/ConnectFour.vcxprojResolveAssemblyReference.cache
+*.idb
+Debug/vc140.pdb
+stdafx.cpp
+targetver.h
+stdafx.h
