@@ -74,7 +74,8 @@ bool ConnectFourBoard::victoryReached()
 			}
 		}
 	}
-	return (rowIndex[2][2] - rowIndex[0][0] >= 3 || rowIndex[2][1] - rowIndex[0][1] >= 3 || colIndex[0][2] - colIndex[2][0] >= 3 || colIndex[1][2] -
+	return (rowIndex[2][2] - rowIndex[0][0] >= 3 || rowIndex[2][1] - rowIndex[0][1] >= 3 || colIndex[0][2] - colIndex[2][0] >= 3 || colIndex[1][2] -
+
 		colIndex[1][0] >= 3);
 }
 
