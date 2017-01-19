@@ -62,10 +62,10 @@ bool ConnectFourBoard::victoryReached()
 		{
 			for (std::size_t j = 0; j < 3; j++)
 			{
-				std::size_t nextRow = rowIndex[i][j] + i - 1;
-				std::size_t nextCol = colIndex[i][j] + j - 1;
+				std::size_t nextRow = rowIndex[i][j] + i;
+				std::size_t nextCol = colIndex[i][j] + j;
 				if (nextRow <= 0 || nextRow > m_height || nextCol <= 0 || nextCol > m_width) { going[i][j] = false; }
-				else if (getFromSquare(nextRow, nextCol) != currPlayer()) { going[i][j] = false; }
+				else if (getFromSquare(--nextRow, --nextCol) != currPlayer()) { going[i][j] = false; }
 				else {
 					rowIndex[i][j] = nextRow;
 					colIndex[i][j] = nextCol;
